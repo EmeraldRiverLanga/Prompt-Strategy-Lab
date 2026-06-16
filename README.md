@@ -1,4 +1,4 @@
-# Prompt-Strategy-Lab — Comparing Six Prompting Strategies on a Data-Analysis Task
+# Prompt-Strategy-Lab – Comparing Six Prompting Strategies on a Data-Analysis Task
 
 A controlled experiment that runs six prompting strategies against the same data-analysis task and measures their accuracy, reliability, and cost. The headline result: making the model write code that Python executes beats every text-based prompting strategy at once — on accuracy, stability, and cost.
 
