@@ -12,7 +12,7 @@ Two ideas hold the project together.
 
 **The data is a measuring instrument, not the subject.** The happiness dataset was chosen precisely because every answer can be computed exactly, which makes it a fair, objective yardstick for the strategies. The project studies *how the strategies behave*, not the happiness data itself.
 
-![Accuracy of all six strategies over three runs, with mean ± variance, cost, and latency](screenshots/summary.png)
+![Accuracy of all six strategies over three runs, with mean ± variance, cost, and latency](screenshots/summary.PNG)
 
 ## Technologies Used
 
@@ -70,7 +70,7 @@ python summarize.py          # reprints the summary from saved results (no API c
 
 A quick connectivity check confirms the key and environment work before the full run:
 
-![check_setup.py confirming the environment and API key work](screenshots/check_setup.png)
+![check_setup.py confirming the environment and API key work](screenshots/check_setup.PNG)
 
 ## Project Structure
 
@@ -126,15 +126,15 @@ A few findings stand out.
 
 **Logic and arithmetic are separate abilities.** Explicit reasoning (chain-of-thought, self-consistency) solves the multi-step *medium* questions, but never breaks the arithmetic ceiling – the *hard* questions stay near one in four for every text strategy. Better prompting improves reasoning; only changing the approach fixes computation.
 
-![A text strategy handles the easy lookups but fails the arithmetic-heavy questions – fluent reasoning, wrong totals, because the model is doing the math in its head across 156 rows](screenshots/text_arithmetic_fail.png)
+![A text strategy handles the easy lookups but fails the arithmetic-heavy questions – fluent reasoning, wrong totals, because the model is doing the math in its head across 156 rows](screenshots/text_arithmetic_fail.PNG)
 
 **Self-correction needs an objective signal.** Iterative self-refinement did not help and sometimes turned a correct answer into a wrong one: with no way to detect its own arithmetic error, the model "revises" blindly. Code-writing succeeds for the opposite reason – a syntax or runtime error is a real signal, so feeding it back and retrying fixes it.
 
-![Iterative self-refinement spiralling on the hard questions – it repeats *"is incorrect, I will use the actual data"* without ever computing, and even turns a correct answer (South Sudan) into a wrong one (Central African Republic). The lowest score of the six](screenshots/self_refine_loop.png)
+![Iterative self-refinement spiralling on the hard questions – it repeats *"is incorrect, I will use the actual data"* without ever computing, and even turns a correct answer (South Sudan) into a wrong one (Central African Republic). The lowest score of the six](screenshots/self_refine_loop.PNG)
 
 **The best strategy is also the cheapest and most stable.** Code-writing was the only capable strategy whose result did not vary at all across runs (Python computes deterministically), and it was far cheaper because it sends the model only the column names, not the data. The cost ordering is a property of the strategies, not of the price list: the dollar figures above are specific to this model, but the *relative* ranking holds for any model, since it is driven by how much text each strategy sends.
 
-![Code-writing on the same questions: the model writes a single pandas expression and Python computes the exact value – solving the hard arithmetic questions that every text strategy missed](screenshots/code_writing.png)
+![Code-writing on the same questions: the model writes a single pandas expression and Python computes the exact value – solving the hard arithmetic questions that every text strategy missed](screenshots/code_writing.PNG)
 
 ## Key Design Decisions
 
