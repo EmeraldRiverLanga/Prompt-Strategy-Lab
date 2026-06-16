@@ -1,0 +1,18 @@
+# secret
+.env
+
+# dataset
+data/
+
+# virtual environment
+.venv/
+
+# python bytecode
+__pycache__/
+*.py[cod]
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,533 @@
+{
+  "timestamp": "2026-06-15T13:21:28",
+  "strategies": {
+    "zero_shot (baseline)": {
+      "accuracy": 0.3,
+      "by_difficulty": {
+        "easy": "3/3",
+        "medium": "0/3",
+        "hard": "0/4"
+      },
+      "usage": {
+        "calls": 10,
+        "prompt_tokens": 52411,
+        "completion_tokens": 83,
+        "total_tokens": 52494,
+        "est_cost_usd": 0.00105
+      },
+      "latency_s": 17.7,
+      "questions": [
+        {
+          "id": "q1",
+          "difficulty": "easy",
+          "answer": "Finland with a happiness score of 7.769.",
+          "truth": "Finland",
+          "correct": true
+        },
+        {
+          "id": "q2",
+          "difficulty": "medium",
+          "answer": "Netherlands",
+          "truth": "New Zealand",
+          "correct": false
+        },
+        {
+          "id": "q3",
+          "difficulty": "hard",
+          "answer": "34",
+          "truth": 52,
+          "correct": false
+        },
+        {
+          "id": "q4",
+          "difficulty": "easy",
+          "answer": "South Sudan",
+          "truth": "South Sudan",
+          "correct": true
+        },
+        {
+          "id": "q5",
+          "difficulty": "easy",
+          "answer": "7.769",
+          "truth": 7.769,
+          "correct": true
+        },
+        {
+          "id": "q6",
+          "difficulty": "medium",
+          "answer": "United Arab Emirates with a GDP per capita of 1.503.",
+          "truth": "Qatar",
+          "correct": false
+        },
+        {
+          "id": "q7",
+          "difficulty": "medium",
+          "answer": "United Arab Emirates with a healthy life expectancy of 0.598.",
+          "truth": "Costa Rica",
+          "correct": false
+        },
+        {
+          "id": "q8",
+          "difficulty": "hard",
+          "answer": "6.19",
+          "truth": 5.41,
+          "correct": false
+        },
+        {
+          "id": "q9",
+          "difficulty": "hard",
+          "answer": "64",
+          "truth": 88,
+          "correct": false
+        },
+        {
+          "id": "q10",
+          "difficulty": "hard",
+          "answer": "4.769.",
+          "truth": 4.916,
+          "correct": false
+        }
+      ]
+    },
+    "chain_of_thought": {
+      "accuracy": 0.4,
+      "by_difficulty": {
+        "easy": "3/3",
+        "medium": "0/3",
+        "hard": "1/4"
+      },
+      "usage": {
+        "calls": 10,
+        "prompt_tokens": 52616,
+        "completion_tokens": 3848,
+        "total_tokens": 56464,
+        "est_cost_usd": 0.00117
+      },
+      "latency_s": 106.9,
+      "questions": [
+        {
+          "id": "q1",
+          "difficulty": "easy",
+          "answer": "Finland",
+          "truth": "Finland",
+          "correct": true
+        },
+        {
+          "id": "q2",
+          "difficulty": "medium",
+          "answer": "Iceland",
+          "truth": "New Zealand",
+          "correct": false
+        },
+        {
+          "id": "q3",
+          "difficulty": "hard",
+          "answer": "34",
+          "truth": 52,
+          "correct": false
+        },
+        {
+          "id": "q4",
+          "difficulty": "easy",
+          "answer": "South Sudan",
+          "truth": "South Sudan",
+          "correct": true
+        },
+        {
+          "id": "q5",
+          "difficulty": "easy",
+          "answer": "7.769",
+          "truth": 7.769,
+          "correct": true
+        },
+        {
+          "id": "q6",
+          "difficulty": "medium",
+          "answer": "United Arab Emirates",
+          "truth": "Qatar",
+          "correct": false
+        },
+        {
+          "id": "q7",
+          "difficulty": "medium",
+          "answer": "Swaziland (0.0)",
+          "truth": "Costa Rica",
+          "correct": false
+        },
+        {
+          "id": "q8",
+          "difficulty": "hard",
+          "answer": "4.99",
+          "truth": 5.41,
+          "correct": false
+        },
+        {
+          "id": "q9",
+          "difficulty": "hard",
+          "answer": "76",
+          "truth": 88,
+          "correct": false
+        },
+        {
+          "id": "q10",
+          "difficulty": "hard",
+          "answer": "4.916",
+          "truth": 4.916,
+          "correct": true
+        }
+      ]
+    },
+    "role_prompting": {
+      "accuracy": 0.4,
+      "by_difficulty": {
+        "easy": "3/3",
+        "medium": "0/3",
+        "hard": "1/4"
+      },
+      "usage": {
+        "calls": 10,
+        "prompt_tokens": 52666,
+        "completion_tokens": 4359,
+        "total_tokens": 57025,
+        "est_cost_usd": 0.00118
+      },
+      "latency_s": 136.7,
+      "questions": [
+        {
+          "id": "q1",
+          "difficulty": "easy",
+          "answer": "Finland with a happiness score of 7.769.",
+          "truth": "Finland",
+          "correct": true
+        },
+        {
+          "id": "q2",
+          "difficulty": "medium",
+          "answer": "Luxembourg with a GDP per capita of 1.609.",
+          "truth": "New Zealand",
+          "correct": false
+        },
+        {
+          "id": "q3",
+          "difficulty": "hard",
+          "answer": "34",
+          "truth": 52,
+          "correct": false
+        },
+        {
+          "id": "q4",
+          "difficulty": "easy",
+          "answer": "South Sudan with a happiness score of 2.853.",
+          "truth": "South Sudan",
+          "correct": true
+        },
+        {
+          "id": "q5",
+          "difficulty": "easy",
+          "answer": "7.769",
+          "truth": 7.769,
+          "correct": true
+        },
+        {
+          "id": "q6",
+          "difficulty": "medium",
+          "answer": "Singapore with a GDP per capita of 1.572.",
+          "truth": "Qatar",
+          "correct": false
+        },
+        {
+          "id": "q7",
+          "difficulty": "medium",
+          "answer": "United Arab Emirates with a healthy life expectancy of 0.598.",
+          "truth": "Costa Rica",
+          "correct": false
+        },
+        {
+          "id": "q8",
+          "difficulty": "hard",
+          "answer": "5.51",
+          "truth": 5.41,
+          "correct": true
+        },
+        {
+          "id": "q9",
+          "difficulty": "hard",
+          "answer": "34",
+          "truth": 88,
+          "correct": false
+        },
+        {
+          "id": "q10",
+          "difficulty": "hard",
+          "answer": "5.769",
+          "truth": 4.916,
+          "correct": false
+        }
+      ]
+    },
+    "self_consistency (CoT x5, vote)": {
+      "accuracy": 0.6,
+      "by_difficulty": {
+        "easy": "3/3",
+        "medium": "2/3",
+        "hard": "1/4"
+      },
+      "usage": {
+        "calls": 50,
+        "prompt_tokens": 262980,
+        "completion_tokens": 11787,
+        "total_tokens": 274767,
+        "est_cost_usd": 0.00561
+      },
+      "latency_s": 356.6,
+      "questions": [
+        {
+          "id": "q1",
+          "difficulty": "easy",
+          "answer": "Finland",
+          "truth": "Finland",
+          "correct": true
+        },
+        {
+          "id": "q2",
+          "difficulty": "medium",
+          "answer": "New Zealand",
+          "truth": "New Zealand",
+          "correct": true
+        },
+        {
+          "id": "q3",
+          "difficulty": "hard",
+          "answer": "35",
+          "truth": 52,
+          "correct": false
+        },
+        {
+          "id": "q4",
+          "difficulty": "easy",
+          "answer": "South Sudan, 2.853",
+          "truth": "South Sudan",
+          "correct": true
+        },
+        {
+          "id": "q5",
+          "difficulty": "easy",
+          "answer": "7.769",
+          "truth": 7.769,
+          "correct": true
+        },
+        {
+          "id": "q6",
+          "difficulty": "medium",
+          "answer": "Qatar",
+          "truth": "Qatar",
+          "correct": true
+        },
+        {
+          "id": "q7",
+          "difficulty": "medium",
+          "answer": "United States",
+          "truth": "Costa Rica",
+          "correct": false
+        },
+        {
+          "id": "q8",
+          "difficulty": "hard",
+          "answer": "6.01",
+          "truth": 5.41,
+          "correct": false
+        },
+        {
+          "id": "q9",
+          "difficulty": "hard",
+          "answer": "44",
+          "truth": 88,
+          "correct": false
+        },
+        {
+          "id": "q10",
+          "difficulty": "hard",
+          "answer": "4.916",
+          "truth": 4.916,
+          "correct": true
+        }
+      ]
+    },
+    "iterative (self-refine)": {
+      "accuracy": 0.4,
+      "by_difficulty": {
+        "easy": "2/3",
+        "medium": "1/3",
+        "hard": "1/4"
+      },
+      "usage": {
+        "calls": 20,
+        "prompt_tokens": 111475,
+        "completion_tokens": 12631,
+        "total_tokens": 124106,
+        "est_cost_usd": 0.00261
+      },
+      "latency_s": 277.0,
+      "questions": [
+        {
+          "id": "q1",
+          "difficulty": "easy",
+          "answer": "Finland",
+          "truth": "Finland",
+          "correct": true
+        },
+        {
+          "id": "q2",
+          "difficulty": "medium",
+          "answer": "New Zealand",
+          "truth": "New Zealand",
+          "correct": true
+        },
+        {
+          "id": "q3",
+          "difficulty": "hard",
+          "answer": "36",
+          "truth": 52,
+          "correct": false
+        },
+        {
+          "id": "q4",
+          "difficulty": "easy",
+          "answer": "Central African Republic",
+          "truth": "South Sudan",
+          "correct": false
+        },
+        {
+          "id": "q5",
+          "difficulty": "easy",
+          "answer": "7.769",
+          "truth": 7.769,
+          "correct": true
+        },
+        {
+          "id": "q6",
+          "difficulty": "medium",
+          "answer": "United Arab Emirates",
+          "truth": "Qatar",
+          "correct": false
+        },
+        {
+          "id": "q7",
+          "difficulty": "medium",
+          "answer": "Swaziland (0.0)",
+          "truth": "Costa Rica",
+          "correct": false
+        },
+        {
+          "id": "q8",
+          "difficulty": "hard",
+          "answer": "4.98",
+          "truth": 5.41,
+          "correct": false
+        },
+        {
+          "id": "q9",
+          "difficulty": "hard",
+          "answer": "74",
+          "truth": 88,
+          "correct": false
+        },
+        {
+          "id": "q10",
+          "difficulty": "hard",
+          "answer": "4.916",
+          "truth": 4.916,
+          "correct": true
+        }
+      ]
+    },
+    "code_writing (super-prompt)": {
+      "accuracy": 0.8,
+      "by_difficulty": {
+        "easy": "3/3",
+        "medium": "1/3",
+        "hard": "4/4"
+      },
+      "usage": {
+        "calls": 11,
+        "prompt_tokens": 1550,
+        "completion_tokens": 199,
+        "total_tokens": 1749,
+        "est_cost_usd": 4e-05
+      },
+      "latency_s": 8.7,
+      "questions": [
+        {
+          "id": "q1",
+          "difficulty": "easy",
+          "answer": "Finland",
+          "truth": "Finland",
+          "correct": true
+        },
+        {
+          "id": "q2",
+          "difficulty": "medium",
+          "answer": "1.303",
+          "truth": "New Zealand",
+          "correct": false
+        },
+        {
+          "id": "q3",
+          "difficulty": "hard",
+          "answer": "52",
+          "truth": 52,
+          "correct": true
+        },
+        {
+          "id": "q4",
+          "difficulty": "easy",
+          "answer": "South Sudan",
+          "truth": "South Sudan",
+          "correct": true
+        },
+        {
+          "id": "q5",
+          "difficulty": "easy",
+          "answer": "7.769",
+          "truth": 7.769,
+          "correct": true
+        },
+        {
+          "id": "q6",
+          "difficulty": "medium",
+          "answer": "Qatar",
+          "truth": "Qatar",
+          "correct": true
+        },
+        {
+          "id": "q7",
+          "difficulty": "medium",
+          "answer": "0.963",
+          "truth": "Costa Rica",
+          "correct": false
+        },
+        {
+          "id": "q8",
+          "difficulty": "hard",
+          "answer": "5.41",
+          "truth": 5.41,
+          "correct": true
+        },
+        {
+          "id": "q9",
+          "difficulty": "hard",
+          "answer": "88",
+          "truth": 88,
+          "correct": true
+        },
+        {
+          "id": "q10",
+          "difficulty": "hard",
+          "answer": "4.916",
+          "truth": 4.916,
+          "correct": true
+        }
+      ]
+    }
+  }
+}

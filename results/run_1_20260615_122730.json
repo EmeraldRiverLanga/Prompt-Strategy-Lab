@@ -1,0 +1,533 @@
+{
+  "timestamp": "2026-06-15T12:27:30",
+  "strategies": {
+    "zero_shot (baseline)": {
+      "accuracy": 0.3,
+      "by_difficulty": {
+        "easy": "3/3",
+        "medium": "0/3",
+        "hard": "0/4"
+      },
+      "usage": {
+        "calls": 10,
+        "prompt_tokens": 52387,
+        "completion_tokens": 95,
+        "total_tokens": 52482,
+        "est_cost_usd": 0.00105
+      },
+      "latency_s": 15.4,
+      "questions": [
+        {
+          "id": "q1",
+          "difficulty": "easy",
+          "answer": "Finland with a happiness score of 7.769.",
+          "truth": "Finland",
+          "correct": true
+        },
+        {
+          "id": "q2",
+          "difficulty": "medium",
+          "answer": "Luxembourg with a GDP per capita of 1.609.",
+          "truth": "New Zealand",
+          "correct": false
+        },
+        {
+          "id": "q3",
+          "difficulty": "hard",
+          "answer": "34",
+          "truth": 52,
+          "correct": false
+        },
+        {
+          "id": "q4",
+          "difficulty": "easy",
+          "answer": "South Sudan",
+          "truth": "South Sudan",
+          "correct": true
+        },
+        {
+          "id": "q5",
+          "difficulty": "easy",
+          "answer": "7.769",
+          "truth": 7.769,
+          "correct": true
+        },
+        {
+          "id": "q6",
+          "difficulty": "medium",
+          "answer": "United Arab Emirates with a GDP per capita of 1.503.",
+          "truth": "Qatar",
+          "correct": false
+        },
+        {
+          "id": "q7",
+          "difficulty": "medium",
+          "answer": "United Arab Emirates with a healthy life expectancy of 0.598.",
+          "truth": "Costa Rica",
+          "correct": false
+        },
+        {
+          "id": "q8",
+          "difficulty": "hard",
+          "answer": "6.19",
+          "truth": 5.41,
+          "correct": false
+        },
+        {
+          "id": "q9",
+          "difficulty": "hard",
+          "answer": "34",
+          "truth": 88,
+          "correct": false
+        },
+        {
+          "id": "q10",
+          "difficulty": "hard",
+          "answer": "5.769",
+          "truth": 4.916,
+          "correct": false
+        }
+      ]
+    },
+    "chain_of_thought": {
+      "accuracy": 0.5,
+      "by_difficulty": {
+        "easy": "3/3",
+        "medium": "1/3",
+        "hard": "1/4"
+      },
+      "usage": {
+        "calls": 10,
+        "prompt_tokens": 52566,
+        "completion_tokens": 4442,
+        "total_tokens": 57008,
+        "est_cost_usd": 0.00118
+      },
+      "latency_s": 95.7,
+      "questions": [
+        {
+          "id": "q1",
+          "difficulty": "easy",
+          "answer": "Finland",
+          "truth": "Finland",
+          "correct": true
+        },
+        {
+          "id": "q2",
+          "difficulty": "medium",
+          "answer": "New Zealand",
+          "truth": "New Zealand",
+          "correct": true
+        },
+        {
+          "id": "q3",
+          "difficulty": "hard",
+          "answer": "34",
+          "truth": 52,
+          "correct": false
+        },
+        {
+          "id": "q4",
+          "difficulty": "easy",
+          "answer": "South Sudan",
+          "truth": "South Sudan",
+          "correct": true
+        },
+        {
+          "id": "q5",
+          "difficulty": "easy",
+          "answer": "7.769",
+          "truth": 7.769,
+          "correct": true
+        },
+        {
+          "id": "q6",
+          "difficulty": "medium",
+          "answer": "United Arab Emirates",
+          "truth": "Qatar",
+          "correct": false
+        },
+        {
+          "id": "q7",
+          "difficulty": "medium",
+          "answer": "Sierra Leone (0.443)",
+          "truth": "Costa Rica",
+          "correct": false
+        },
+        {
+          "id": "q8",
+          "difficulty": "hard",
+          "answer": "4.98",
+          "truth": 5.41,
+          "correct": false
+        },
+        {
+          "id": "q9",
+          "difficulty": "hard",
+          "answer": "74",
+          "truth": 88,
+          "correct": false
+        },
+        {
+          "id": "q10",
+          "difficulty": "hard",
+          "answer": "4.916",
+          "truth": 4.916,
+          "correct": true
+        }
+      ]
+    },
+    "role_prompting": {
+      "accuracy": 0.5,
+      "by_difficulty": {
+        "easy": "3/3",
+        "medium": "0/3",
+        "hard": "2/4"
+      },
+      "usage": {
+        "calls": 10,
+        "prompt_tokens": 52666,
+        "completion_tokens": 769,
+        "total_tokens": 53435,
+        "est_cost_usd": 0.00108
+      },
+      "latency_s": 32.2,
+      "questions": [
+        {
+          "id": "q1",
+          "difficulty": "easy",
+          "answer": "Finland with a happiness score of 7.769.",
+          "truth": "Finland",
+          "correct": true
+        },
+        {
+          "id": "q2",
+          "difficulty": "medium",
+          "answer": "Netherlands with a GDP per capita of 1.396.",
+          "truth": "New Zealand",
+          "correct": false
+        },
+        {
+          "id": "q3",
+          "difficulty": "hard",
+          "answer": "34",
+          "truth": 52,
+          "correct": false
+        },
+        {
+          "id": "q4",
+          "difficulty": "easy",
+          "answer": "South Sudan with a happiness score of 2.853.",
+          "truth": "South Sudan",
+          "correct": true
+        },
+        {
+          "id": "q5",
+          "difficulty": "easy",
+          "answer": "7.769",
+          "truth": 7.769,
+          "correct": true
+        },
+        {
+          "id": "q6",
+          "difficulty": "medium",
+          "answer": "Singapore with a GDP per capita of 1.572.",
+          "truth": "Qatar",
+          "correct": false
+        },
+        {
+          "id": "q7",
+          "difficulty": "medium",
+          "answer": "United Arab Emirates with a healthy life expectancy of 0.598.",
+          "truth": "Costa Rica",
+          "correct": false
+        },
+        {
+          "id": "q8",
+          "difficulty": "hard",
+          "answer": "5.51",
+          "truth": 5.41,
+          "correct": true
+        },
+        {
+          "id": "q9",
+          "difficulty": "hard",
+          "answer": "93",
+          "truth": 88,
+          "correct": false
+        },
+        {
+          "id": "q10",
+          "difficulty": "hard",
+          "answer": "4.916",
+          "truth": 4.916,
+          "correct": true
+        }
+      ]
+    },
+    "self_consistency (CoT x5, vote)": {
+      "accuracy": 0.5,
+      "by_difficulty": {
+        "easy": "2/3",
+        "medium": "2/3",
+        "hard": "1/4"
+      },
+      "usage": {
+        "calls": 50,
+        "prompt_tokens": 262881,
+        "completion_tokens": 13762,
+        "total_tokens": 276643,
+        "est_cost_usd": 0.00567
+      },
+      "latency_s": 372.6,
+      "questions": [
+        {
+          "id": "q1",
+          "difficulty": "easy",
+          "answer": "Finland",
+          "truth": "Finland",
+          "correct": true
+        },
+        {
+          "id": "q2",
+          "difficulty": "medium",
+          "answer": "New Zealand",
+          "truth": "New Zealand",
+          "correct": true
+        },
+        {
+          "id": "q3",
+          "difficulty": "hard",
+          "answer": "74",
+          "truth": 52,
+          "correct": false
+        },
+        {
+          "id": "q4",
+          "difficulty": "easy",
+          "answer": "Central African Republic",
+          "truth": "South Sudan",
+          "correct": false
+        },
+        {
+          "id": "q5",
+          "difficulty": "easy",
+          "answer": "7.769",
+          "truth": 7.769,
+          "correct": true
+        },
+        {
+          "id": "q6",
+          "difficulty": "medium",
+          "answer": "Qatar",
+          "truth": "Qatar",
+          "correct": true
+        },
+        {
+          "id": "q7",
+          "difficulty": "medium",
+          "answer": "Luxembourg",
+          "truth": "Costa Rica",
+          "correct": false
+        },
+        {
+          "id": "q8",
+          "difficulty": "hard",
+          "answer": "1.06",
+          "truth": 5.41,
+          "correct": false
+        },
+        {
+          "id": "q9",
+          "difficulty": "hard",
+          "answer": "46",
+          "truth": 88,
+          "correct": false
+        },
+        {
+          "id": "q10",
+          "difficulty": "hard",
+          "answer": "4.916",
+          "truth": 4.916,
+          "correct": true
+        }
+      ]
+    },
+    "iterative (self-refine)": {
+      "accuracy": 0.4,
+      "by_difficulty": {
+        "easy": "2/3",
+        "medium": "1/3",
+        "hard": "1/4"
+      },
+      "usage": {
+        "calls": 20,
+        "prompt_tokens": 116261,
+        "completion_tokens": 38418,
+        "total_tokens": 154679,
+        "est_cost_usd": 0.00348
+      },
+      "latency_s": 821.3,
+      "questions": [
+        {
+          "id": "q1",
+          "difficulty": "easy",
+          "answer": "Finland",
+          "truth": "Finland",
+          "correct": true
+        },
+        {
+          "id": "q2",
+          "difficulty": "medium",
+          "answer": "New Zealand",
+          "truth": "New Zealand",
+          "correct": true
+        },
+        {
+          "id": "q3",
+          "difficulty": "hard",
+          "answer": "46",
+          "truth": 52,
+          "correct": false
+        },
+        {
+          "id": "q4",
+          "difficulty": "easy",
+          "answer": "Central African Republic",
+          "truth": "South Sudan",
+          "correct": false
+        },
+        {
+          "id": "q5",
+          "difficulty": "easy",
+          "answer": "7.769",
+          "truth": 7.769,
+          "correct": true
+        },
+        {
+          "id": "q6",
+          "difficulty": "medium",
+          "answer": "United Arab Emirates",
+          "truth": "Qatar",
+          "correct": false
+        },
+        {
+          "id": "q7",
+          "difficulty": "medium",
+          "answer": "United Arab Emirates (0.598)",
+          "truth": "Costa Rica",
+          "correct": false
+        },
+        {
+          "id": "q8",
+          "difficulty": "hard",
+          "answer": "To find the average happiness score across all countries, I will follow these steps:\n\n1. Identify the column that contains the happiness scores, which is the \"Score\" column.\n2. Calculate the sum of all happiness scores in the \"Score\" column.\n3. Count the number of countries in the dataset.\n4. Divide the sum of happiness scores by the number of countries to get the average happiness score.\n5. Round the average happiness score to two decimals.\n\nLet's perform the calculations:\n\nSum of happiness scores: 7.769 + 7.6 + 7.554 +... + 2.853 = 776.19 (approximate)\nNumber of countries: 156\nAverage happiness score: 776.19 / 156 ≈ 4.98\n\nHowever, I will recheck the calculations to ensure accuracy.\n\nUpon rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually 776.19, but I will recheck the calculation to ensure accuracy.\n\nAfter rechecking, I found that the sum of happiness scores is actually",
+          "truth": 5.41,
+          "correct": false
+        },
+        {
+          "id": "q9",
+          "difficulty": "hard",
+          "answer": "45",
+          "truth": 88,
+          "correct": false
+        },
+        {
+          "id": "q10",
+          "difficulty": "hard",
+          "answer": "4.916",
+          "truth": 4.916,
+          "correct": true
+        }
+      ]
+    },
+    "code_writing (super-prompt)": {
+      "accuracy": 0.8,
+      "by_difficulty": {
+        "easy": "3/3",
+        "medium": "1/3",
+        "hard": "4/4"
+      },
+      "usage": {
+        "calls": 10,
+        "prompt_tokens": 1369,
+        "completion_tokens": 194,
+        "total_tokens": 1563,
+        "est_cost_usd": 3e-05
+      },
+      "latency_s": 11.5,
+      "questions": [
+        {
+          "id": "q1",
+          "difficulty": "easy",
+          "answer": "Finland",
+          "truth": "Finland",
+          "correct": true
+        },
+        {
+          "id": "q2",
+          "difficulty": "medium",
+          "answer": "1.303",
+          "truth": "New Zealand",
+          "correct": false
+        },
+        {
+          "id": "q3",
+          "difficulty": "hard",
+          "answer": "52",
+          "truth": 52,
+          "correct": true
+        },
+        {
+          "id": "q4",
+          "difficulty": "easy",
+          "answer": "South Sudan",
+          "truth": "South Sudan",
+          "correct": true
+        },
+        {
+          "id": "q5",
+          "difficulty": "easy",
+          "answer": "7.769",
+          "truth": 7.769,
+          "correct": true
+        },
+        {
+          "id": "q6",
+          "difficulty": "medium",
+          "answer": "Qatar",
+          "truth": "Qatar",
+          "correct": true
+        },
+        {
+          "id": "q7",
+          "difficulty": "medium",
+          "answer": "0.963",
+          "truth": "Costa Rica",
+          "correct": false
+        },
+        {
+          "id": "q8",
+          "difficulty": "hard",
+          "answer": "5.41",
+          "truth": 5.41,
+          "correct": true
+        },
+        {
+          "id": "q9",
+          "difficulty": "hard",
+          "answer": "88",
+          "truth": 88,
+          "correct": true
+        },
+        {
+          "id": "q10",
+          "difficulty": "hard",
+          "answer": "4.916",
+          "truth": 4.916,
+          "correct": true
+        }
+      ]
+    }
+  }
+}
